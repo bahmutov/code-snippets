@@ -8,16 +8,24 @@ Read [tutorial](http://bahmutov.calepin.co/chrome-devtools-code-snippets.html).
 
 ## Snippets
 
+### generic performance
+
 * [boilerplate.js](boilerplate.js) - boilerplate for loading and running a remote code script 
 (see [remote download](#remote-download)).
 * [first-paint.js](first-paint.js) - time from page reload to first visible contents.
+* [timing.js](timing.js) - Detailed page timing information, 
+from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
+
+### Angular performance
+
 * [ng-count-watchers.js](ng-count-watchers.js) - counts total watchers in the page. 
 More watchers - slower digest cycle.
 * [ng-idle-apply-timing.js](ng-idle-apply-timing.js) - measures how long a digest cycle takes without 
 any data changes. This measures purely how long all watched expressions take to compute and compare
 to previous values (dirty checking).
-* [timing.js](timing.js) - Detailed page timing information, 
-from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
+* [ng-profile-scope-method.js](ng-profile-scope-method.js) - installs profile calls around a given
+scope method. When the method completes, the original non-instrumented version will be restored.
+The browser will have timeline and CPU profile.
 
 All snippets, including mine are distributed under MIT license.
 
