@@ -4,6 +4,8 @@
 
 ![fist paint](https://raw.githubusercontent.com/bahmutov/code-snippets/master/first-paint-code-snippet.png)
 
+Read [tutorial](http://bahmutov.calepin.co/chrome-devtools-code-snippets.html).
+
 ## Snippets
 
 * [boilerplate.js](boilerplate.js) - boilerplate for loading and running a remote code script 
