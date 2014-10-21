@@ -6,7 +6,8 @@
 
 ## Snippets
 
-* [boilerplate.js](boilerplate.js) - boilerplate for loading and running a remote code script (see [remote download]([#remote-download])).
+* [boilerplate.js](boilerplate.js) - boilerplate for loading and running a remote code script 
+(see [remote download](#remote-download])).
 * [first-paint.js](first-paint.js) - time from page reload to first visible contents.
 * [ng-count-watchers.js](ng-count-watchers.js) - counts total watchers in the page. 
 More watchers - slower digest cycle.
