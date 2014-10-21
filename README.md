@@ -26,6 +26,7 @@ to previous values (dirty checking).
 * [ng-profile-scope-method.js](ng-profile-scope-method.js) - installs profile calls around a given
 scope method. When the method completes, the original non-instrumented version will be restored.
 The browser will have timeline and CPU profile.
+* [ng-run-digest-cycle.js](ng-run-digest-cycle.js) - triggers digest cycle starting with root scope.
 
 All snippets, including mine are distributed under MIT license.
 
