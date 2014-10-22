@@ -29,6 +29,8 @@ The browser will have timeline and CPU profile.
 * [ng-run-digest-cycle.js](ng-run-digest-cycle.js) - triggers digest cycle starting with root scope.
 * [ng-profile-data-change.js](ng-profile-data-change.js) - changes data on the scope, runs digest cycle
 to profile listeners.
+* [ng-scope-size.js](ng-scope.size.js) - finds total size of all user objects attached to all scopes.
+Smaller data - faster copying and comparison during digest cycle.
 
 All snippets, including mine are distributed under MIT license.
 
