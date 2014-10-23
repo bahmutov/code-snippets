@@ -31,6 +31,8 @@ The browser will have timeline and CPU profile.
 to profile listeners.
 * [ng-scope-size.js](ng-scope.size.js) - finds total size of all user objects attached to all scopes.
 Smaller data - faster copying and comparison during digest cycle.
+* [ng-find-scope-property.js](ng-find-scope-property.js) - finds all scopes that own a property
+with given name.
 
 All snippets, including mine are distributed under MIT license.
 
