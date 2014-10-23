@@ -4,7 +4,8 @@
 
 ![fist paint](https://raw.githubusercontent.com/bahmutov/code-snippets/master/first-paint-code-snippet.png)
 
-Read [tutorial](http://bahmutov.calepin.co/chrome-devtools-code-snippets.html).
+Read [Code Snippets tutorial][1] and 
+[How to improve Angular application performance using code snippets][2].
 
 ## Snippets
 
@@ -71,3 +72,6 @@ Spread the word: tweet, star on github, etc.
 
 Support: if you find any problems with this module, email / tweet /
 [open issue](https://github.com/bahmutov/code-snippets/issues?state=open) on Github
+
+[1]: http://bahmutov.calepin.co/chrome-devtools-code-snippets.html
+[2]: http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html
