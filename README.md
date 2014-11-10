@@ -34,6 +34,8 @@ to profile listeners.
 Smaller data - faster copying and comparison during digest cycle.
 * [ng-find-scope-property.js](ng-find-scope-property.js) - finds all scopes that own a property
 with given name.
+* [ng-profile-local-digest.js](ng-profile-local-digest.js) - runs idle digest cycle starting at the scope
+that surrounds given selector. Useful to find parts of the page with expensive watchers.
 
 All snippets, including mine are distributed under MIT license.
 
