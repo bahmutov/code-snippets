@@ -36,6 +36,8 @@ Smaller data - faster copying and comparison during digest cycle.
 with given name.
 * [ng-profile-local-digest.js](ng-profile-local-digest.js) - runs idle digest cycle starting at the scope
 that surrounds given selector. Useful to find parts of the page with expensive watchers.
+* [ng-find-expensive-digest.js](ng-find-expensive-digest.js) builds upon ng-profile-local-digest.js to measure
+digest duration for several selectors and print sorted table starting with the slowest digest duration.
 
 All snippets, including mine are distributed under MIT license.
 
