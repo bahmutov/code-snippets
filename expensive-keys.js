@@ -33,6 +33,25 @@
     return result;
   }
 
+  function toMB(bytes) {
+    return bytes / 1024 / 1024;
+  }
+
+  function toSizeMB(size) {
+    return toMB(size).toFixed(2) + ' MB';
+  }
+
+  function valuesInMB(obj) {
+    var result = {};
+    Object.keys(obj).forEach(function (key) {
+      var value = obj[key];
+      if (typeof value === 'number') {
+        result[key] = toSizeMB(obj[key]);
+      }
+    });
+    return result;
+  }
+
   function propertySizes(keys, items) {
     if (arguments.length === 1) {
       items = keys;
@@ -45,9 +64,11 @@
     var keyInItemsSize = keySize.bind(null, items);
     var sizes = keys.map(keyInItemsSize);
     var result = zip(keys, sizes);
+    result.mb = valuesInMB.bind(null, result);
     return result;
   }
 
   root.expensiveKeys = propertySizes;
   console.log('try expensiveKeys(<array of objects>);');
+  console.log('you can call .mb() method on the returned object');
 }(this));
