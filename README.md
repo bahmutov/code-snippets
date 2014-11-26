@@ -16,7 +16,7 @@ Read [Code Snippets tutorial][1] and
 * [first-paint.js](first-paint.js) - time from page reload to first visible contents.
 * [timing.js](timing.js) - Detailed page timing information, 
 from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
-* [local-storage-size.js][local-storage-size.js] - measures size of the strings in the `localStorage`.
+* [local-storage-size.js](local-storage-size.js) - measures size of the strings in the `localStorage`.
 
 ### Angular performance
 
