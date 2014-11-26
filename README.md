@@ -18,7 +18,7 @@ Read [Code Snippets tutorial][1] and
 from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
 * [local-storage-size.js](local-storage-size.js) - measures size of the strings in the `localStorage`.
 * [expensive-keys.js](expensive-keys.js) - measures how much space individual keys and their values
-take up in a collection of objects.
+take up in a collection of objects, read [Measuring Space Allocation][measure].
 
 ### Angular performance
 
@@ -82,3 +82,4 @@ Support: if you find any problems with this module, email / tweet /
 
 [1]: http://bahmutov.calepin.co/chrome-devtools-code-snippets.html
 [2]: http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html
+[measure]: http://bahmutov.calepin.co/measure-space-allocation.html
