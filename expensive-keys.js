@@ -20,7 +20,7 @@
   }
 
   function keySize(items, key) {
-    return stringSize(key) + objectSize(pickValue(key, items));
+    return stringSize(key) * items.length + objectSize(pickValue(key, items));
   }
 
   function zip(keys, values) {
