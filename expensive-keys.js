@@ -9,20 +9,18 @@
     return stringSize(JSON.stringify(obj));
   }
 
-  var pickJustKey = function pickJustKey(key) {
+  var value = function value(key) {
     return function (object) {
-      return {
-        key: object[key]
-      };
+      return object[key];
     };
   }
 
   var pickValue = function (key, items) {
-    return items.map(pickJustKey(key));
+    return items.map(value(key));
   }
 
   function keySize(items, key) {
-    return objectSize(pickValue(key, items));
+    return stringSize(key) + objectSize(pickValue(key, items));
   }
 
   function zip(keys, values) {
