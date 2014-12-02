@@ -19,6 +19,7 @@ from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
 * [local-storage-size.js](local-storage-size.js) - measures size of the strings in the `localStorage`.
 * [expensive-keys.js](expensive-keys.js) - measures how much space individual keys and their values
 take up in a collection of objects, read [Measuring Space Allocation][measure].
+* [keys-vs-values.js](keys-vs-values.js) - measures length of keys vs length of values in an array.
 
 ### Angular performance
 
