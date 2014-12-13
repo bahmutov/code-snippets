@@ -16,6 +16,7 @@ Read [Code Snippets tutorial][1] and
 * [first-paint.js](first-paint.js) - time from page reload to first visible contents.
 * [timing.js](timing.js) - Detailed page timing information, 
 from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
+* [time-method-call.js](time-method-call.js) - measures single method call time.
 * [local-storage-size.js](local-storage-size.js) - measures size of the strings in the `localStorage`.
 * [expensive-keys.js](expensive-keys.js) - measures how much space individual keys and their values
 take up in a collection of objects, read [Measuring Space Allocation][measure].
