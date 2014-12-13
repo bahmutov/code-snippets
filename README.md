@@ -17,6 +17,7 @@ Read [Code Snippets tutorial][1] and
 * [timing.js](timing.js) - Detailed page timing information, 
 from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
 * [time-method-call.js](time-method-call.js) - measures single method call time.
+* [profile-method-call.js](profile-method-call.js) - profiles a single method call.
 * [local-storage-size.js](local-storage-size.js) - measures size of the strings in the `localStorage`.
 * [expensive-keys.js](expensive-keys.js) - measures how much space individual keys and their values
 take up in a collection of objects, read [Measuring Space Allocation][measure].
