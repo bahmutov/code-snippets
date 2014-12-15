@@ -4,12 +4,13 @@
 
 ![fist paint](https://raw.githubusercontent.com/bahmutov/code-snippets/master/first-paint-code-snippet.png)
 
-Read [Code Snippets tutorial][1] and 
-[How to improve Angular application performance using code snippets][2].
+Read [Code Snippets tutorial][1],
+[Performance profiling using DevTools code snippets][2] and
+[How to improve Angular application performance using code snippets][3].
 
 ## Snippets
 
-### generic performance
+### DOM and CPU generic performance
 
 * [boilerplate.js](boilerplate.js) - boilerplate for loading and running a remote code script 
 (see [remote download](#remote-download)).
@@ -18,6 +19,9 @@ Read [Code Snippets tutorial][1] and
 from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
 * [time-method-call.js](time-method-call.js) - measures single method call time.
 * [profile-method-call.js](profile-method-call.js) - profiles a single method call.
+
+### Storage measurements
+
 * [local-storage-size.js](local-storage-size.js) - measures size of the strings in the `localStorage`.
 * [expensive-keys.js](expensive-keys.js) - measures how much space individual keys and their values
 take up in a collection of objects, read [Measuring Space Allocation][measure].
@@ -84,5 +88,6 @@ Support: if you find any problems with this module, email / tweet /
 [open issue](https://github.com/bahmutov/code-snippets/issues?state=open) on Github
 
 [1]: http://bahmutov.calepin.co/chrome-devtools-code-snippets.html
-[2]: http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html
+[2]: http://bahmutov.calepin.co/performance-profiling-using-devtools-code-snippets.html
+[3]: http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html
 [measure]: http://bahmutov.calepin.co/measure-space-allocation.html
