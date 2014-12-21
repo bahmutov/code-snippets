@@ -12,6 +12,7 @@
   var methodName = 'find';
   var name = selector + ':' + methodName;
 
+  /* global angular */
   var el = angular.element(document.getElementById(selector));
   var scope = el.scope() || el.isolateScope();
   console.assert(scope, 'cannot find scope from ' + name);

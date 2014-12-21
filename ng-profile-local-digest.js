@@ -7,6 +7,8 @@ function profileDirectiveDigest(selector) {
   console.assert(selector && typeof selector === 'string', 'expected selector', selector);
   var el = document.querySelector(selector);
   console.assert(el, 'cannot find element with selector', selector);
+
+  /* global angular */
   var ngEl = angular.element(el);
   var scope = ngEl.scope() || ngEl.isolateScope();
   console.assert(scope, 'cannot find scope from element', selector);

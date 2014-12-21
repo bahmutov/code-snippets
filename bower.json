@@ -1,0 +1,29 @@
+{
+  "name": "code-snippets",
+  "main": "turtles.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bahmutov/code-snippets",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "docs",
+    "Gruntfile.js",
+    "package.json",
+    "index.html"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "keywords": [
+    "testing",
+    "test",
+    "exploratory",
+    "mock",
+    "chrome",
+    "devtools",
+    "code",
+    "snippets"
+  ]
+}
