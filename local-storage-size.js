@@ -1,6 +1,6 @@
 // based on answer to question
 // http://stackoverflow.com/questions/4391575/how-to-find-the-size-of-localstorage
-(function showLocalStorageSize(){
+(function showLocalStorageSize() {
   function stringSizeBytes(str) {
     return str.length * 2;
   }

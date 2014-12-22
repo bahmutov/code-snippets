@@ -21,6 +21,7 @@
    *
    * object - the object whose size should be determined
    */
+   /* jshint -W073, -W071 */
   function sizeof(object){
 
     // initialise the list of objects and size
@@ -33,17 +34,20 @@
       // determine the type of the object
       switch (typeof objects[index]) {
 
-        // the object is a boolean
-        case 'boolean': size += 4; break;
+        case 'boolean': {
+          size += 4; break;
+        }
 
-        // the object is a number
-        case 'number': size += 8; break;
+        case 'number': {
+          size += 8; break;
+        }
 
-        // the object is a string
-        case 'string': size += 2 * objects[index].length; break;
+        case 'string': {
+          size += 2 * objects[index].length;
+          break;
+        }
 
-        // the object is a generic object
-        case 'object':
+        case 'object': {
 
           // loop over the keys
           for (var key in objects[index]) {
@@ -70,6 +74,7 @@
             }
 
           }
+        }
 
       }
 
@@ -83,16 +88,16 @@
   // go through each element. Count watchers if it has scope or isolate scope
   /* eslint no-for-loops:0 */
   for (i = 0; i < len; i++) {
-      /* global angular */
-      data = angular.element(all[i]).data();
-      scope = data.$scope || data.$isolateScope;
-      if (scope) {
-          if ( !test[ scope.$id ] ) {
-              test[ scope.$id ] = true;
-              count += sizeof(scope);
-              scopes += 1;
-          }
+    /* global angular */
+    data = angular.element(all[i]).data();
+    scope = data.$scope || data.$isolateScope;
+    if (scope) {
+      if ( !test[ scope.$id ] ) {
+        test[ scope.$id ] = true;
+        count += sizeof(scope);
+        scopes += 1;
       }
+    }
   }
   console.log(scopes, 'scopes have', count, 'bytes attached');
   return count;
