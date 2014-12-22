@@ -17,7 +17,7 @@
 [code-snippets-dependencies-url]: https://david-dm.org/bahmutov/code-snippets
 [code-snippets-devdependencies-image]: https://david-dm.org/bahmutov/code-snippets/dev-status.png
 [code-snippets-devdependencies-url]: https://david-dm.org/bahmutov/code-snippets#info=devDependencies
-[code-snippets-codacy-image]: https://www.codacy.com/project/badge/c2b210ee4fde4f21a7f9c6cc41078e30
+[code-snippets-codacy-image]: https://www.codacy.com/project/badge/99acaf40b1f1483c80016eb31fbaef49
 [code-snippets-codacy-url]: https://www.codacy.com/public/bahmutov/code-snippets.git
 
 ![fist paint](https://raw.githubusercontent.com/bahmutov/code-snippets/master/first-paint-code-snippet.png)
