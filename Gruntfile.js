@@ -2,7 +2,8 @@ module.exports = function(grunt) {
   'use strict';
 
   var sourceFiles = [
-    '*.js', '!Gruntfile.js'
+    '*.js', '!Gruntfile.js',
+    '!timing.js' // based on 3rd party script
   ];
 
   grunt.initConfig({
@@ -20,7 +21,8 @@ module.exports = function(grunt) {
     jshint: {
       all: sourceFiles,
       options: {
-        jshintrc: '.jshintrc'
+        jshintrc: '.jshintrc',
+        reporter: require('jshint-summary')
       }
     },
 

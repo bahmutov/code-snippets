@@ -7,13 +7,13 @@
   var propertyName = 'selectedBenchmarks';
   var name = selector + ':' + propertyName;
 
+  /* global angular */
   var el = angular.element(selector);
   var scope = el.scope() || el.isolateScope();
   console.assert(scope, 'cannot find scope from ' + name);
 
   var property = scope[propertyName];
   console.assert(property, 'missing ' + name);
-  var $timeout = el.injector().get('$timeout');
 
   function digestCycle() {
     angular.element(document).injector().get('$rootScope').$apply();

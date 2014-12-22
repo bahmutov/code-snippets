@@ -2,6 +2,8 @@
 // More watchers - longer cycle
 // More complicated expression logic - longer cycle
 // Also creates CPU profile for debugging bottlenecks (Chrome DevTools)
+
+/* global angular, performance */
 angular.element(document).injector().invoke(function timeApply($rootScope) {
   console.profile('$apply');
   var started = performance.now();

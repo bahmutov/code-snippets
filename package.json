@@ -18,6 +18,7 @@
     "grunt-jscs": "1.0.0",
     "grunt-nice-package": "0.9.2",
     "grunt-npm2bower-sync": "0.4.0",
+    "jshint-summary": "0.4.0",
     "matchdep": "0.3.0",
     "pre-git": "0.1.1"
   },
