@@ -13,7 +13,7 @@
     return {
       name: key,
       size: stringSizeBytes(localStorage[key])
-    }
+    };
   }
 
   function toSizeMB(info) {

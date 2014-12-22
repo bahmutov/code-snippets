@@ -10,8 +10,9 @@
 
     // go through each element. Count watchers if it has scope or isolate scope
     for (i=0; i < len; i++) {
+        /* global angular */
         data = angular.element(all[i]).data();
-        var scope = data.$scope || data.$isolateScope;
+        scope = data.$scope || data.$isolateScope;
         if (scope) {
             if ( ! test[ scope.$id ] ) {
                 test[ scope.$id ] = true;
@@ -46,7 +47,7 @@
     for (var index = 0; index < objects.length; index ++){
 
       // determine the type of the object
-      switch (typeof objects[index]){
+      switch (typeof objects[index]) {
 
         // the object is a boolean
         case 'boolean': size += 4; break;
@@ -62,11 +63,16 @@
 
           // loop over the keys
           for (var key in objects[index]) {
-            if (key[0] === '$' || key === 'this' || key === 'constructor' || key === 'lenth')
+            if (!objects[index].hasOwnProperty(key)) {
+              continue;
+            }
+            if (key[0] === '$' || key === 'this' || key === 'constructor' || key === 'lenth') {
               continue; // angular's internal property ($apply, etc)
+            }
 
             // determine whether the value has already been processed
             var processed = false;
+            /* jshint -W073 */
             for (var search = 0; search < objects.length; search ++){
               if (objects[search] === objects[index][key]){
                 processed = true;
@@ -75,7 +81,9 @@
             }
 
             // queue the value to be processed if appropriate
-            if (!processed) objects.push(objects[index][key]);
+            if (!processed) {
+              objects.push(objects[index][key]);
+            }
 
           }
 

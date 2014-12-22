@@ -13,11 +13,11 @@
     return function (object) {
       return object[key];
     };
-  }
+  };
 
   var pickValue = function (key, items) {
     return items.map(value(key));
-  }
+  };
 
   function keySize(items, key) {
     return stringSize(key) * items.length + objectSize(pickValue(key, items));
