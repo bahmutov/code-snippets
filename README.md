@@ -2,6 +2,24 @@
 
 > Performance, debugging and testing code snippets to be run in Chrome DevTools
 
+[![NPM][code-snippets-icon] ][code-snippets-url]
+
+[![Build status][code-snippets-ci-image] ][code-snippets-ci-url]
+[![dependencies][code-snippets-dependencies-image] ][code-snippets-dependencies-url]
+[![devdependencies][code-snippets-devdependencies-image] ][code-snippets-devdependencies-url]
+[![Codacy Badge][code-snippets-codacy-image] ][code-snippets-codacy-url]
+
+[code-snippets-icon]: https://nodei.co/npm/code-snippets.png?downloads=true
+[code-snippets-url]: https://npmjs.org/package/code-snippets
+[code-snippets-ci-image]: https://travis-ci.org/bahmutov/code-snippets.png?branch=master
+[code-snippets-ci-url]: https://travis-ci.org/bahmutov/code-snippets
+[code-snippets-dependencies-image]: https://david-dm.org/bahmutov/code-snippets.png
+[code-snippets-dependencies-url]: https://david-dm.org/bahmutov/code-snippets
+[code-snippets-devdependencies-image]: https://david-dm.org/bahmutov/code-snippets/dev-status.png
+[code-snippets-devdependencies-url]: https://david-dm.org/bahmutov/code-snippets#info=devDependencies
+[code-snippets-codacy-image]: https://www.codacy.com/project/badge/c2b210ee4fde4f21a7f9c6cc41078e30
+[code-snippets-codacy-url]: https://www.codacy.com/public/bahmutov/code-snippets.git
+
 ![fist paint](https://raw.githubusercontent.com/bahmutov/code-snippets/master/first-paint-code-snippet.png)
 
 Read [Code Snippets tutorial][1],
