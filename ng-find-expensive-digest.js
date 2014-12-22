@@ -17,7 +17,10 @@
       return takes;
     });
     var merged = selectors.map(function (selector, k) {
-      return { selector: selector, takes: durations[k] };
+      return {
+        selector: selector,
+        takes: durations[k]
+      };
     });
     merged = merged.sort(function (a, b) {
       return b.takes - a.takes;

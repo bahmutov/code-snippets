@@ -9,11 +9,12 @@
         var found = [];
 
         /* global angular */
-        for (i=0; i < len; i++) {
+        /* eslint no-for-loops:0 */
+        for (i = 0; i < len; i++) {
             data = angular.element(all[i]).data();
             scope = data.$scope || data.$isolateScope;
             if (scope && scope.hasOwnProperty(name)) {
-                if ( ! test[ scope.$id ] ) {
+                if ( !test[ scope.$id ] ) {
                     test[ scope.$id ] = true;
                     found.push(scope);
                 }

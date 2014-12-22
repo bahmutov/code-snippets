@@ -8,22 +8,6 @@
         test = {},
         scopes = 0;
 
-    // go through each element. Count watchers if it has scope or isolate scope
-    for (i=0; i < len; i++) {
-        /* global angular */
-        data = angular.element(all[i]).data();
-        scope = data.$scope || data.$isolateScope;
-        if (scope) {
-            if ( ! test[ scope.$id ] ) {
-                test[ scope.$id ] = true;
-                count += sizeof(scope);
-                scopes += 1;
-            }
-        }
-    }
-    console.log(scopes, 'scopes have', count, 'bytes attached');
-    return count;
-
   /*
   sizeof.js modified for angular scope client data computation
   A function to calculate the approximate memory usage of objects
@@ -41,10 +25,10 @@
 
     // initialise the list of objects and size
     var objects = [object];
-    var size    = 0;
+    var size = 0;
 
     // loop over the objects
-    for (var index = 0; index < objects.length; index ++){
+    for (var index = 0; index < objects.length; index += 1) {
 
       // determine the type of the object
       switch (typeof objects[index]) {
@@ -73,7 +57,7 @@
             // determine whether the value has already been processed
             var processed = false;
             /* jshint -W073 */
-            for (var search = 0; search < objects.length; search ++){
+            for (var search = 0; search < objects.length; search += 1){
               if (objects[search] === objects[index][key]){
                 processed = true;
                 break;
@@ -95,5 +79,22 @@
     return size;
 
   }
+
+  // go through each element. Count watchers if it has scope or isolate scope
+  /* eslint no-for-loops:0 */
+  for (i = 0; i < len; i++) {
+      /* global angular */
+      data = angular.element(all[i]).data();
+      scope = data.$scope || data.$isolateScope;
+      if (scope) {
+          if ( !test[ scope.$id ] ) {
+              test[ scope.$id ] = true;
+              count += sizeof(scope);
+              scopes += 1;
+          }
+      }
+  }
+  console.log(scopes, 'scopes have', count, 'bytes attached');
+  return count;
 
 }());

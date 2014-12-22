@@ -42,9 +42,9 @@
   function valuesInMB(obj) {
     var result = {};
     Object.keys(obj).forEach(function (key) {
-      var value = obj[key];
-      if (typeof value === 'number') {
-        result[key] = toSizeMB(obj[key]);
+      var val = obj[key];
+      if (typeof val === 'number') {
+        result[key] = toSizeMB(val);
       }
     });
     return result;
