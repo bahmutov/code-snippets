@@ -1,7 +1,7 @@
 {
   "name": "code-snippets",
   "description": "Chrome DevTools code snippets ",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": {
     "url": "https://github.com/bahmutov/code-snippets/issues"
@@ -38,7 +38,10 @@
   ],
   "license": "MIT",
   "main": "first-paint.js",
-  "pre-commit": "npm test",
+  "pre-commit": [
+    "npm test",
+    "npm version"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:bahmutov/code-snippets.git"
