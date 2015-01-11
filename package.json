@@ -37,7 +37,7 @@
     "snippets"
   ],
   "license": "MIT",
-  "main": "turtles.js",
+  "main": "first-paint.js",
   "pre-commit": "npm test",
   "repository": {
     "type": "git",
