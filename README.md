@@ -132,4 +132,4 @@ Support: if you find any problems with this module, email / tweet /
 [2]: http://bahmutov.calepin.co/performance-profiling-using-devtools-code-snippets.html
 [3]: http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html
 [measure]: http://bahmutov.calepin.co/measure-space-allocation.html
-[RawGit]: (https://rawgit.com/)
+[RawGit]: https://rawgit.com/
