@@ -1,9 +1,10 @@
 // updates code snippets from remote repo
+// See README.md
 var snippets = JSON.parse(localStorage.scriptSnippets);
 console.log('I have', snippets.length, 'code snippets');
 console.table(snippets);
 
-// read code snippets from this repo
+// read code snippets from this repo via RawGit.com
 var repo = 'https://rawgit.com/bahmutov/code-snippets/master/';
 
 function fetch(url) {
@@ -62,6 +63,9 @@ allChecked.then(function () {
   });
   if (updated.length) {
     localStorage.scriptSnippets = JSON.stringify(snippets);
+    console.table(updated);
+    console.log('please reopen DevTools to load updated code snippets');
+  } else {
+    console.log('nothing to update.');
   }
-  console.table(updated);
 });

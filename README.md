@@ -69,10 +69,33 @@ digest duration for several selectors and print sorted table starting with the s
 
 All snippets, including mine are distributed under MIT license.
 
-## Remote download
+## Updating local code snippets
 
-You can download and run a snippet by using the following boilerplate 
-(scripts are via downloaded via [RawGit](https://rawgit.com/))
+You can update local code snippets by downloading new versions from this github repository.
+Create a code snippets and copy source from [update-code-snippets.js](update-code-snippets.js). 
+
+You will run this code snippet in an unusual way. First, open any web page, even an empty tab.
+Open the DevTools in **undocked** mode (Command+Option+I on Mac). Then open the DevTools **again**, 
+*while focused* on the first DevTools. This will open the second DevTools instance with the source for the
+first DevTools panels. If you inspect the `localStorage` variable in the second DevTools window, you will
+find lots of interesting stuff, including all the code snippets in the `localStorage.scriptSnippets` property.
+
+Whenever you want to update the your local code snippets in the Chrome DevTools, execute the `update-code-snippets.js`
+snippet in the second DevTools instance. The update script looks at the your current code snippets and 
+tries to download a file with same name from the code snippets github repository (via [RawGit][RawGit]). 
+If the remote file has been downloaded successfully, it will replace the snippet. 
+After all snippets are checked, reopen the DevTools to load the updated source code.
+
+![update code snippets](images/update-code-snippets.png)
+
+Note, that only the latest source is downloaded, not any particular release.
+Also, only code snippets with names matching existing files in this repo are replaced. If you do not
+want to override a code snippet - just rename it, for example, remove the `.js` extension.
+
+## Remote download a single script
+
+You can download and run a single snippet by using the following boilerplate 
+(scripts are via downloaded via [RawGit][RawGit])
 
 ```js
 (function firstPaintRemote() {
@@ -109,3 +132,4 @@ Support: if you find any problems with this module, email / tweet /
 [2]: http://bahmutov.calepin.co/performance-profiling-using-devtools-code-snippets.html
 [3]: http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html
 [measure]: http://bahmutov.calepin.co/measure-space-allocation.html
+[RawGit]: (https://rawgit.com/)
