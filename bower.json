@@ -15,7 +15,6 @@
     "package.json",
     "index.html"
   ],
-  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "keywords": [
     "testing",
     "test",
@@ -25,5 +24,9 @@
     "devtools",
     "code",
     "snippets"
+  ],
+  "description": "Chrome DevTools code snippets ",
+  "authors": [
+    "Gleb Bahmutov <gleb.bahmutov@gmail.com>"
   ]
 }
