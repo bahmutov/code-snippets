@@ -24,7 +24,6 @@
 
   scope[methodName] = function () {
     console.profile(name);
-    console.timeline(name);
     console.time(name);
 
     // method can return a value or a promise
@@ -35,7 +34,6 @@
       $timeout(function afterDOMUpdate() {
         console.timeStamp('dom updated after', methodName);
         console.timeEnd(name);
-        console.timelineEnd(name);
         console.profileEnd();
         scope[methodName] = fn;
         console.log('restored', name);
