@@ -1,6 +1,12 @@
 // updates code snippets from remote repo
-// See README.md
-var snippets = JSON.parse(localStorage.scriptSnippets);
+// needs to run in the secondary DevTools window (undocked)
+// see "Updating local code snippets"
+var source = localStorage.scriptSnippets;
+if (typeof source === 'undefined') {
+  throw new Error('Cannot find scriptSnippets, are you running in the secondary DevTools?\n' +
+    'see https://github.com/bahmutov/code-snippets#updating-local-code-snippets');
+}
+var snippets = JSON.parse(source);
 console.log('I have', snippets.length, 'code snippets');
 console.table(snippets);
 
