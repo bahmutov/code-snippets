@@ -44,7 +44,7 @@
     Object.keys(obj).forEach(function (key) {
       var val = obj[key];
       if (typeof val === 'number') {
-        result[key] = toSizeMB(val);
+        result[key] = toSizeMB(obj[key]);
       }
     });
     return result;
@@ -53,6 +53,9 @@
   function propertySizes(keys, items) {
     if (arguments.length === 1) {
       items = keys;
+      if (!Array.isArray(items) && typeof items === 'object') {
+        items = [items];
+      }
       if (!items.length) {
         return {};
       }
