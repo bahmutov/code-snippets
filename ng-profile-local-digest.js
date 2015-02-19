@@ -4,6 +4,11 @@ Use: run this code snippet, then profileDirectiveDigest('#foo'); to measure
 watchers in the #foo element (and its children along the scope tree).
 */
 (function (window) {
+  var performance = window.performance;
+
+  function getDiff(start, end) {
+    return (end - start).toFixed(4);
+  }
 
   function profileDirectiveDigest(selector) {
     console.assert(selector && typeof selector === 'string', 'expected selector', selector);
@@ -13,10 +18,14 @@ watchers in the #foo element (and its children along the scope tree).
     /* global angular */
     var ngEl = angular.element(el);
     var scope = ngEl.scope() || ngEl.isolateScope();
+    var startTime;
+    var endTime;
+
     console.assert(scope, 'cannot find scope from element', selector);
-    console.time(selector + ' digest');
+    startTime = performance.now();
     scope.$digest();
-    console.timeEnd(selector + ' digest');
+    endTime = performance.now();
+    console.log(selector, getDiff(startTime, endTime) + ' digest');
   }
 
   window.profileDirectiveDigest = profileDirectiveDigest;
