@@ -128,8 +128,8 @@ Spread the word: tweet, star on github, etc.
 Support: if you find any problems with this module, email / tweet /
 [open issue](https://github.com/bahmutov/code-snippets/issues?state=open) on Github
 
-[1]: http://bahmutov.calepin.co/chrome-devtools-code-snippets.html
-[2]: http://bahmutov.calepin.co/performance-profiling-using-devtools-code-snippets.html
-[3]: http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html
-[measure]: http://bahmutov.calepin.co/measure-space-allocation.html
+[1]: http://glebbahmutov.com/blog/chrome-dev-tools-code-snippets/
+[2]: http://glebbahmutov.com/blog/performance-profiling-using-devtools-code-snippets/
+[3]: http://glebbahmutov.com/blog/improving-angular-web-app-performance-example/
+[measure]: http://glebbahmutov.com/blog/measure-space-allocation/
 [RawGit]: https://rawgit.com/
