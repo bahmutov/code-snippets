@@ -70,5 +70,6 @@
   "white"         : false,
 
   "globals"       : {
+    "Promise": true
   }
 }
