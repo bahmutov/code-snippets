@@ -66,6 +66,9 @@ with given name.
 that surrounds given selector. Useful to find parts of the page with expensive watchers.
 * [ng-find-expensive-digest.js](ng-find-expensive-digest.js) builds upon ng-profile-local-digest.js to measure
 digest duration for several selectors and print sorted table starting with the slowest digest duration.
+* [ng-count-digest-cycles.js](ng-count-digest-cycles.js) - counts number of full digest cycles (from the root scope)
+that run when a scope method executes. Useful because sometimes you can get away with just a local digest
+cycle, rather than a full update. See [Local Angular scopes](http://glebbahmutov.com/blog/local-angular-scopes/).
 
 All snippets, including mine are distributed under MIT license.
 
