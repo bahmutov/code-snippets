@@ -25,6 +25,7 @@
   var count = 0;
   $rootScope.$watch(function () {
     count += 1;
+    console.log('digest cycle ran', count, 'times');
   });
 
   var $q = el.injector().get('$q');
@@ -39,7 +40,6 @@
       scope.$$postDigest(function () {
         scope[methodName] = fn;
         console.log('restored', methodName);
-        console.log('digest cycle ran', count, 'time(s) during', name);
       });
     });
   };
