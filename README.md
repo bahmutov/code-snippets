@@ -37,6 +37,8 @@ Read [Code Snippets tutorial][1],
 from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
 * [time-method-call.js](time-method-call.js) - measures single method call time.
 * [profile-method-call.js](profile-method-call.js) - profiles a single method call.
+* [profile-prototype-method.js](profile-prototype-method.js) - profiles a single method call 
+that is on a prototype object, not on an instance.
 
 ### Storage measurements
 

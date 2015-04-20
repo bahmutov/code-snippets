@@ -1,7 +1,7 @@
 {
   "name": "code-snippets",
   "main": "first-paint.js",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/bahmutov/code-snippets",
   "license": "MIT",
   "ignore": [
