@@ -39,6 +39,8 @@ from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
 * [profile-method-call.js](profile-method-call.js) - profiles a single method call.
 * [profile-prototype-method.js](profile-prototype-method.js) - profiles a single method call 
 that is on a prototype object, not on an instance.
+* [profile-separate-calls.js](profile-separate-calls.js) can profile actions where separate
+method calls start and stop the operation.
 
 ### Storage measurements
 
