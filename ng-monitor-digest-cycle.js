@@ -9,7 +9,7 @@
   }
   var $rootScope = injector.get('$rootScope');
   function dummy() {
-    console.log('digest cycle');
+    console.count('digest cycle');
   }
   window.stopWatching = $rootScope.$watch(dummy);
   console.log('run window.stopWatching() to stop watching the digest cycle');
