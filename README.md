@@ -77,6 +77,8 @@ digest duration for several selectors and print sorted table starting with the s
 * [ng-count-digest-cycles.js](ng-count-digest-cycles.js) - counts number of full digest cycles (from the root scope)
 that run when a scope method executes. Useful because sometimes you can get away with just a local digest
 cycle, rather than a full update. See [Local Angular scopes](http://glebbahmutov.com/blog/local-angular-scopes/).
+* [ng-throw-error.js](ng-throw-error.js) throws an error from the digest cycle; useful for checking
+if your [exception handler](http://glebbahmutov.com/blog/catch-all-errors-in-angular-app/) is working.
 
 All snippets, including mine are distributed under MIT license.
 
