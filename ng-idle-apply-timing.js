@@ -3,8 +3,10 @@
 // More complicated expression logic - longer cycle
 // Also creates CPU profile for debugging bottlenecks (Chrome DevTools)
 
+// assumes the angular application is at least around the document's body
+
 /* global angular, performance */
-angular.element(document).injector().invoke(function timeApply($rootScope) {
+angular.element(document.body).injector().invoke(function timeApply($rootScope) {
   console.profile('$apply');
   var started = performance.now();
   $rootScope.$apply();
