@@ -8,12 +8,12 @@
   where $scope could be determined from element 'my-selector'
 */
 (function profileScopeMethod() {
-  var selector = 'find';
+  var selector = '#find';
   var methodName = 'find';
   var name = selector + ':' + methodName;
 
   /* global angular */
-  var el = angular.element(document.getElementById(selector));
+  var el = angular.element(document.querySelector(selector));
   var scope = el.scope() || el.isolateScope();
   console.assert(scope, 'cannot find scope from ' + name);
 
