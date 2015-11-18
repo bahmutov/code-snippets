@@ -26,21 +26,21 @@ Read [Code Snippets tutorial][1],
 [Performance profiling using DevTools code snippets][2] and
 [How to improve Angular application performance using code snippets][3].
 
-Note: code snippets do NOT have access to the full console API, for example no access to 
+Note: code snippets do NOT have access to the full console API, for example no access to
 `console.monitor`.
 
 ## Snippets
 
 ### DOM and CPU generic performance
 
-* [boilerplate.js](boilerplate.js) - boilerplate for loading and running a remote code script 
+* [boilerplate.js](boilerplate.js) - boilerplate for loading and running a remote code script
 (see [remote download](#remote-download)).
 * [first-paint.js](first-paint.js) - time from page reload to first visible contents.
-* [timing.js](timing.js) - Detailed page timing information, 
+* [timing.js](timing.js) - Detailed page timing information,
 from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
 * [time-method-call.js](time-method-call.js) - measures single method call time.
 * [profile-method-call.js](profile-method-call.js) - profiles a single method call.
-* [profile-prototype-method.js](profile-prototype-method.js) - profiles a single method call 
+* [profile-prototype-method.js](profile-prototype-method.js) - profiles a single method call
 that is on a prototype object, not on an instance.
 * [profile-separate-calls.js](profile-separate-calls.js) can profile actions where separate
 method calls start and stop the operation.
@@ -54,9 +54,9 @@ take up in a collection of objects, read [Measuring Space Allocation][measure].
 
 ### Angular performance
 
-* [ng-count-watchers.js](ng-count-watchers.js) - counts total watchers in the page. 
+* [ng-count-watchers.js](ng-count-watchers.js) - counts total watchers in the page.
 More watchers - slower digest cycle.
-* [ng-idle-apply-timing.js](ng-idle-apply-timing.js) - measures how long a digest cycle takes without 
+* [ng-idle-apply-timing.js](ng-idle-apply-timing.js) - measures how long a digest cycle takes without
 any data changes. This measures purely how long all watched expressions take to compute and compare
 to previous values (dirty checking).
 * [ng-profile-scope-method.js](ng-profile-scope-method.js) - installs profile calls around a given
@@ -87,18 +87,18 @@ All snippets, including mine are distributed under MIT license.
 ## Updating local code snippets
 
 You can update local code snippets by downloading new versions from this github repository.
-Create a code snippets and copy source from [update-code-snippets.js](update-code-snippets.js). 
+Create a new code snippet and copy the source from [update-code-snippets.js](update-code-snippets.js).
 
 You will run this code snippet in an unusual way. First, open any web page, even an empty tab.
-Open the DevTools in **undocked** mode (Command+Option+I on Mac). Then open the DevTools **again**, 
+Open the DevTools in **undocked** mode (Command+Option+I on Mac). Then open the DevTools **again**,
 *while focused* on the first DevTools. This will open the second DevTools instance with the source for the
 first DevTools panels. If you inspect the `localStorage` variable in the second DevTools window, you will
 find lots of interesting stuff, including all the code snippets in the `localStorage.scriptSnippets` property.
 
 Whenever you want to update the your local code snippets in the Chrome DevTools, execute the `update-code-snippets.js`
-snippet in the second DevTools instance. The update script looks at the your current code snippets and 
-tries to download a file with same name from the code snippets github repository (via [RawGit][RawGit]). 
-If the remote file has been downloaded successfully, it will replace the snippet. 
+snippet in the second DevTools instance. The update script looks at the your current code snippets and
+tries to download a file with same name from the code snippets github repository (via [RawGit][RawGit]).
+If the remote file has been downloaded successfully, it will replace the snippet.
 After all snippets are checked, reopen the DevTools to load the updated source code.
 
 ![update code snippets](images/update-code-snippets.png)
@@ -109,7 +109,7 @@ want to override a code snippet - just rename it, for example, remove the `.js` 
 
 ## Remote download a single script
 
-You can download and run a single snippet by using the following boilerplate 
+You can download and run a single snippet by using the following boilerplate
 (scripts are via downloaded via [RawGit][RawGit])
 
 ```js
