@@ -21,7 +21,7 @@
     "grunt-npm2bower-sync": "0.8.1",
     "jshint-summary": "0.4.0",
     "matchdep": "0.3.0",
-    "pre-git": "0.1.1"
+    "pre-git": "1.2.11"
   },
   "engines": {
     "node": "> 0.10.*"
@@ -39,16 +39,28 @@
   ],
   "license": "MIT",
   "main": "first-paint.js",
-  "pre-commit": [
-    "npm test",
-    "npm version"
-  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:bahmutov/code-snippets.git"
   },
   "scripts": {
     "test": "grunt",
-    "grunt": "grunt"
+    "grunt": "grunt",
+    "commit": "commit-wizard"
+  },
+  "config": {
+    "pre-git": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": [
+        "npm test",
+        "npm version"
+      ],
+      "pre-push": [],
+      "post-commit": [],
+      "post-merge": []
+    }
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
