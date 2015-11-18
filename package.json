@@ -10,6 +10,7 @@
   "dependencies": {},
   "devDependencies": {
     "eslint-rules": "0.3.0",
+    "git-issues": "1.2.0",
     "grunt": "0.4.5",
     "grunt-cli": "0.1.13",
     "grunt-contrib-jshint": "0.11.0",
@@ -46,7 +47,8 @@
   "scripts": {
     "test": "grunt",
     "grunt": "grunt",
-    "commit": "commit-wizard"
+    "issues": "git-issues",
+    "commit": "git-issues && commit-wizard"
   },
   "config": {
     "pre-git": {
