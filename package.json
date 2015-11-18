@@ -47,6 +47,7 @@
   "scripts": {
     "test": "grunt",
     "grunt": "grunt",
+    "build": "grunt",
     "issues": "git-issues",
     "commit": "git-issues && commit-wizard"
   },
