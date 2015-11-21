@@ -31,6 +31,11 @@ Note: code snippets do NOT have access to the full console API, for example no a
 
 ## Snippets
 
+### Security
+
+* [test-script-injection.js](test-script-injection.js) - tries to create a new
+  inline script tag to test if page allows it.
+
 ### DOM and CPU generic performance
 
 * [boilerplate.js](boilerplate.js) - boilerplate for loading and running a remote code script
