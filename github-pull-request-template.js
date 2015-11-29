@@ -1,4 +1,4 @@
-(function(){
+(function () {
   var textareaId = '#pull_request_body';
   var textarea = document.querySelector(textareaId);
   var template = '';
@@ -20,6 +20,8 @@
     textarea.scrollTop = 0;
     textarea.selectionStart = textarea.selectionEnd = firstLine.length;
   } else {
+    /* global alert */
+    /* eslint no-alert:0 */
     alert('You are either not on the PR page or there is no ' + textareaId + ' element.');
   }
 })();

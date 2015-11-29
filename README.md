@@ -87,6 +87,11 @@ the digest cycle runs.
 * [ng-throw-error.js](ng-throw-error.js) throws an error from the digest cycle; useful for checking
 if your [exception handler](http://glebbahmutov.com/blog/catch-all-errors-in-angular-app/) is working.
 
+## Misc snippets
+
+* [github-pull-request-template.js](github-pull-request-template.js) - better GitHub pull request
+text, based on the blog post [Enforce standards while submitting a pull request](http://krasimirtsonev.com/blog/article/enforce-standards-while-submitting-a-pull-request) by [Krasimir Tsonev](https://github.com/krasimir).
+
 All snippets, including mine are distributed under MIT license.
 
 ## Updating local code snippets
