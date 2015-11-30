@@ -1,3 +1,7 @@
+/*
+  Read the following blog post
+  http://krasimirtsonev.com/blog/article/enforce-standards-while-submitting-a-pull-request
+*/
 (function () {
   var textareaId = '#pull_request_body';
   var textarea = document.querySelector(textareaId);
