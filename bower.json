@@ -16,14 +16,14 @@
     "index.html"
   ],
   "keywords": [
-    "testing",
-    "test",
+    "chrome",
+    "code",
+    "devtools",
     "exploratory",
     "mock",
-    "chrome",
-    "devtools",
-    "code",
-    "snippets"
+    "snippets",
+    "test",
+    "testing"
   ],
   "description": "Chrome DevTools code snippets ",
   "authors": [

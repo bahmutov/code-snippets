@@ -6,51 +6,6 @@
   "bugs": {
     "url": "https://github.com/bahmutov/code-snippets/issues"
   },
-  "contributors": [],
-  "dependencies": {},
-  "devDependencies": {
-    "eslint-rules": "0.4.3",
-    "git-issues": "1.2.0",
-    "grunt": "0.4.5",
-    "grunt-cli": "0.1.13",
-    "grunt-contrib-jshint": "0.11.3",
-    "grunt-deps-ok": "0.8.0",
-    "grunt-eslint": "2.1.0",
-    "grunt-gh-pages": "1.0.0",
-    "grunt-jscs": "1.2.0",
-    "grunt-nice-package": "0.9.4",
-    "grunt-npm2bower-sync": "0.9.1",
-    "jshint-summary": "0.4.0",
-    "matchdep": "1.0.0",
-    "pre-git": "1.2.11"
-  },
-  "engines": {
-    "node": "> 0.10.*"
-  },
-  "homepage": "https://github.com/bahmutov/code-snippets",
-  "keywords": [
-    "testing",
-    "test",
-    "exploratory",
-    "mock",
-    "chrome",
-    "devtools",
-    "code",
-    "snippets"
-  ],
-  "license": "MIT",
-  "main": "first-paint.js",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:bahmutov/code-snippets.git"
-  },
-  "scripts": {
-    "test": "grunt",
-    "grunt": "grunt",
-    "build": "grunt",
-    "issues": "git-issues",
-    "commit": "git-issues && commit-wizard"
-  },
   "config": {
     "pre-git": {
       "commit-msg": "validate-commit-msg",
@@ -63,7 +18,52 @@
       "post-merge": []
     }
   },
+  "contributors": [],
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-rules": "0.4.3",
+    "git-issues": "1.2.0",
+    "grunt": "0.4.5",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-jshint": "0.11.3",
+    "grunt-deps-ok": "0.8.0",
+    "grunt-eslint": "2.1.0",
+    "grunt-gh-pages": "1.0.0",
+    "grunt-jscs": "1.2.0",
+    "grunt-nice-package": "0.9.6",
+    "grunt-npm2bower-sync": "0.9.1",
+    "jshint-summary": "0.4.0",
+    "matchdep": "1.0.0",
+    "pre-git": "1.4.0"
+  },
+  "engines": {
+    "node": "> 0.10.*"
+  },
+  "homepage": "https://github.com/bahmutov/code-snippets",
+  "keywords": [
+    "chrome",
+    "code",
+    "devtools",
+    "exploratory",
+    "mock",
+    "snippets",
+    "test",
+    "testing"
+  ],
+  "license": "MIT",
+  "main": "first-paint.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bahmutov/code-snippets.git"
+  },
+  "scripts": {
+    "build": "grunt",
+    "commit": "git-issues && commit-wizard",
+    "grunt": "grunt",
+    "issues": "git-issues",
+    "test": "grunt"
   }
 }
