@@ -41,7 +41,8 @@
     "node": "> 0.10.*"
   },
   "files": [
-    "*.js"
+    "*.js",
+    "!Gruntfile.js"
   ],
   "homepage": "https://github.com/bahmutov/code-snippets",
   "keywords": [
