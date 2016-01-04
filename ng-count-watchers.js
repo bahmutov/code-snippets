@@ -1,10 +1,11 @@
 // taken from http://ng.malsup.com/#!/counting-watchers
 (function countAngularWatchers(angular) {
   var i, data, scope,
-    count = 0,
-    all = document.all,
-    len = all.length,
-    test = {};
+      count = 0,
+      all = document.all,
+      len = all.length,
+      test = {},
+      watchers = [];
 
   var mostWatchers = 0;
 
@@ -12,10 +13,14 @@
     test[scope.$id] = true;
     var n = scope.$$watchers.length;
     count += n;
+    if (n > 0){
+      watchers.push.apply(watchers, scope.$$watchers);
+    }
     if (n > mostWatchers) {
       console.log('most watchers', n);
       console.log(element);
       mostWatchers = n;
+
     }
   }
 
@@ -30,6 +35,6 @@
       }
     }
   }
-  console.log('this page has', count, 'angular watchers');
+  console.log('this page has ' + watchers.length + ' angular watchers and the watchers are:', watchers );
   return count;
 }(window.angular));
