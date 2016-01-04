@@ -12,7 +12,9 @@
       "pre-commit": [
         "npm test"
       ],
-      "pre-push": ["npm run size"],
+      "pre-push": [
+        "npm run size"
+      ],
       "post-commit": [],
       "post-merge": []
     }
@@ -38,6 +40,9 @@
   "engines": {
     "node": "> 0.10.*"
   },
+  "files": [
+    "*.js"
+  ],
   "homepage": "https://github.com/bahmutov/code-snippets",
   "keywords": [
     "chrome",
@@ -48,9 +53,6 @@
     "snippets",
     "test",
     "testing"
-  ],
-  "files": [
-    "*.js"
   ],
   "license": "MIT",
   "main": "first-paint.js",
@@ -63,7 +65,7 @@
     "commit": "git-issues && commit-wizard",
     "grunt": "grunt",
     "issues": "git-issues",
-    "test": "grunt",
-    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
+    "test": "grunt"
   }
 }
