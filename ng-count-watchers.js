@@ -21,7 +21,6 @@
       console.log('most watchers', n);
       console.log(element);
       mostWatchers = n;
-
     }
   }
 
