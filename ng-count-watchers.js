@@ -8,6 +8,7 @@
       watchers = [];
 
   var mostWatchers = 0;
+  var maxWatchersToPrint = 20;
 
   function countScopeWatchers(scope, element) {
     test[scope.$id] = true;
@@ -35,6 +36,9 @@
       }
     }
   }
-  console.log('this page has ' + watchers.length + ' angular watchers and the watchers are:', watchers );
+  console.log('this page has ' + watchers.length + ' angular watchers');
+  if (watchers.length < maxWatchersToPrint) {
+    console.log('the watchers are:', watchers);
+  }
   return count;
 }(window.angular));
