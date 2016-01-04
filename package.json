@@ -1,7 +1,7 @@
 {
   "name": "code-snippets",
   "description": "Chrome DevTools code snippets ",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": {
     "url": "https://github.com/bahmutov/code-snippets/issues"
