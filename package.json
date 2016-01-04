@@ -8,20 +8,16 @@
   },
   "config": {
     "pre-git": {
-      "commit-msg": "validate-commit-msg",
+      "commit-msg": "simple",
       "pre-commit": [
-        "npm test",
-        "npm version"
+        "npm test"
       ],
-      "pre-push": [],
+      "pre-push": ["npm run size"],
       "post-commit": [],
       "post-merge": []
     }
   },
   "contributors": [],
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
-  },
   "dependencies": {},
   "devDependencies": {
     "eslint-rules": "0.4.3",
@@ -37,7 +33,7 @@
     "grunt-npm2bower-sync": "0.9.1",
     "jshint-summary": "0.4.0",
     "matchdep": "1.0.0",
-    "pre-git": "1.4.0"
+    "pre-git": "3.1.2"
   },
   "engines": {
     "node": "> 0.10.*"
@@ -53,6 +49,9 @@
     "test",
     "testing"
   ],
+  "files": [
+    "*.js"
+  ],
   "license": "MIT",
   "main": "first-paint.js",
   "repository": {
@@ -64,6 +63,7 @@
     "commit": "git-issues && commit-wizard",
     "grunt": "grunt",
     "issues": "git-issues",
-    "test": "grunt"
+    "test": "grunt",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
   }
 }
