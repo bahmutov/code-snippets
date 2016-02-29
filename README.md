@@ -94,6 +94,8 @@ if your [exception handler](http://glebbahmutov.com/blog/catch-all-errors-in-ang
 
 * [github-pull-request-template.js](github-pull-request-template.js) - better GitHub pull request
 text, based on the blog post [Enforce standards while submitting a pull request](http://krasimirtsonev.com/blog/article/enforce-standards-while-submitting-a-pull-request) by [Krasimir Tsonev](https://github.com/krasimir).
+* [remove-all-but.js](remove-all-but.js) - removes all elements in the page, except the ones in
+the trees with specified selectors. Can be used to quickly clean up the page and leave just the essentials.
 
 All snippets, including mine are distributed under MIT license.
 
@@ -101,6 +103,9 @@ All snippets, including mine are distributed under MIT license.
 
 You can update local code snippets by downloading new versions from this github repository.
 Create a new code snippet and copy the source from [update-code-snippets.js](update-code-snippets.js).
+
+Note: the approach below does not work any more, 
+see [the open issue](https://github.com/bahmutov/code-snippets/issues/23).
 
 You will run this code snippet in an unusual way. First, open any web page, even an empty tab.
 Open the DevTools in **undocked** mode (Command+Option+I on Mac). Then open the DevTools **again**,
