@@ -8,6 +8,7 @@
 [![dependencies][code-snippets-dependencies-image] ][code-snippets-dependencies-url]
 [![devdependencies][code-snippets-devdependencies-image] ][code-snippets-devdependencies-url]
 [![Codacy Badge][code-snippets-codacy-image] ][code-snippets-codacy-url]
+[![semantic-release][semantic-image] ][semantic-url]
 
 [code-snippets-icon]: https://nodei.co/npm/code-snippets.png?downloads=true
 [code-snippets-url]: https://npmjs.org/package/code-snippets
@@ -19,6 +20,8 @@
 [code-snippets-devdependencies-url]: https://david-dm.org/bahmutov/code-snippets#info=devDependencies
 [code-snippets-codacy-image]: https://www.codacy.com/project/badge/99acaf40b1f1483c80016eb31fbaef49
 [code-snippets-codacy-url]: https://www.codacy.com/public/bahmutov/code-snippets.git
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
 
 ![fist paint](https://raw.githubusercontent.com/bahmutov/code-snippets/master/first-paint-code-snippet.png)
 

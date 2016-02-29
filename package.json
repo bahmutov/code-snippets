@@ -1,7 +1,7 @@
 {
   "name": "code-snippets",
   "description": "Chrome DevTools code snippets ",
-  "version": "0.6.0",
+  "version": "0.0.0-semantic-release",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": {
     "url": "https://github.com/bahmutov/code-snippets/issues"
@@ -35,7 +35,8 @@
     "grunt-npm2bower-sync": "0.9.1",
     "jshint-summary": "0.4.0",
     "matchdep": "1.0.0",
-    "pre-git": "3.1.2"
+    "pre-git": "3.1.2",
+    "semantic-release": "4.3.5"
   },
   "engines": {
     "node": "> 0.10.*"
@@ -59,13 +60,14 @@
   "main": "first-paint.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:bahmutov/code-snippets.git"
+    "url": "https://github.com/bahmutov/code-snippets.git"
   },
   "scripts": {
     "build": "grunt",
     "commit": "git-issues && commit-wizard",
     "grunt": "grunt",
     "issues": "git-issues",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "grunt"
   }
