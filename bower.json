@@ -1,7 +1,7 @@
 {
   "name": "code-snippets",
   "main": "first-paint.js",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "homepage": "https://github.com/bahmutov/code-snippets",
   "license": "MIT",
   "ignore": [
@@ -16,14 +16,14 @@
     "index.html"
   ],
   "keywords": [
-    "testing",
-    "test",
+    "chrome",
+    "code",
+    "devtools",
     "exploratory",
     "mock",
-    "chrome",
-    "devtools",
-    "code",
-    "snippets"
+    "snippets",
+    "test",
+    "testing"
   ],
   "description": "Chrome DevTools code snippets ",
   "authors": [

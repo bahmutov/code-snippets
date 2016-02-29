@@ -5,13 +5,19 @@
 
 // assumes the angular application is at least around the document's body
 
-/* global angular, performance */
-angular.element(document.body).injector().invoke(function timeApply($rootScope) {
-  console.profile('$apply');
-  var started = performance.now();
-  $rootScope.$apply();
-  var takes = performance.now() - started;
-  console.log('idle $apply takes', takes, 'ms');
-  console.profileEnd();
-  return takes;
-});
+/* global performance */
+(function profileIdleTiming(angular) {
+
+  function timeApply($rootScope) {
+    console.profile('$apply');
+    var started = performance.now();
+    $rootScope.$apply();
+    var takes = performance.now() - started;
+    console.log('idle $apply takes', takes, 'ms');
+    console.profileEnd();
+    return takes;
+  }
+  timeApply.$inject = ['$rootScope'];
+
+  angular.element(document.body).injector().invoke(timeApply);
+}(window.angular));
