@@ -38,20 +38,24 @@ Note: code snippets do NOT have access to the full console API, for example no a
 
 * [test-script-injection.js](test-script-injection.js) - tries to create a new
   inline script tag to test if page allows it.
+* [harlem-shake-xss.js](harlem-shake-xss.js) - little XSS script that injects
+  [Harlem Shake music](https://github.com/DinisCruz/XSS-Pocs/blob/master/pocs/dance-xss.js)
 
 ### DOM and CPU generic performance
 
 * [boilerplate.js](boilerplate.js) - boilerplate for loading and running a remote code script
-(see [remote download](#remote-download)).
+  (see [remote download](#remote-download)).
 * [first-paint.js](first-paint.js) - time from page reload to first visible contents.
 * [timing.js](timing.js) - Detailed page timing information,
-from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
+  from [addyosmani/timing.js](https://github.com/addyosmani/timing.js).
 * [time-method-call.js](time-method-call.js) - measures single method call time.
 * [profile-method-call.js](profile-method-call.js) - profiles a single method call.
 * [profile-prototype-method.js](profile-prototype-method.js) - profiles a single method call
-that is on a prototype object, not on an instance.
+  that is on a prototype object, not on an instance.
 * [profile-separate-calls.js](profile-separate-calls.js) can profile actions where separate
-method calls start and stop the operation.
+  method calls start and stop the operation.
+* [css-layout.js](css-layout.js) draws boundary around every DOM element for
+  clarity.
 
 ### Storage measurements
 
@@ -104,7 +108,7 @@ All snippets, including mine are distributed under MIT license.
 You can update local code snippets by downloading new versions from this github repository.
 Create a new code snippet and copy the source from [update-code-snippets.js](update-code-snippets.js).
 
-Note: the approach below does not work any more, 
+Note: the approach below does not work any more,
 see [the open issue](https://github.com/bahmutov/code-snippets/issues/23).
 
 You will run this code snippet in an unusual way. First, open any web page, even an empty tab.
