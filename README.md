@@ -64,7 +64,7 @@ Note: code snippets do NOT have access to the full console API, for example no a
 take up in a collection of objects, read [Measuring Space Allocation][measure].
 * [keys-vs-values.js](keys-vs-values.js) - measures length of keys vs length of values in an array.
 
-### Angular performance
+### AngularJs performance
 
 * [ng-count-watchers.js](ng-count-watchers.js) - counts total watchers in the page.
 More watchers - slower digest cycle.
@@ -93,6 +93,10 @@ cycle, rather than a full update. See [Local Angular scopes](http://glebbahmutov
 the digest cycle runs.
 * [ng-throw-error.js](ng-throw-error.js) throws an error from the digest cycle; useful for checking
 if your [exception handler](http://glebbahmutov.com/blog/catch-all-errors-in-angular-app/) is working.
+
+### Angular performance
+
+* are comming...
 
 ## Misc snippets
 
